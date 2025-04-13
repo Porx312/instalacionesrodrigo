@@ -48,7 +48,9 @@ export default function FormularioAlerta({
             : "group relative overflow-hidden bg-gradient-to-r bg-yellow-500 px-4 py-2 text-lg font-bold text-black shadow-md transition-all duration-300 hover:bg-yellow-500 focus:outline-none focus:ring-2  focus:ring-offset-2 active:scale-95"
         }
       >
-        <span className="relative z-10 uppercase tracking-wider text-sm">{text}</span>
+        <span className="relative z-10 uppercase tracking-wider text-sm">
+          {text}
+        </span>
       </button>
 
       {/* Modal con el formulario */}

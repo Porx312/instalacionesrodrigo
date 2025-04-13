@@ -8,8 +8,6 @@ type FAQItem = {
   answer: string;
 };
 
-
-
 const FAQItem: React.FC<{ item: FAQItem }> = ({ item }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -35,7 +33,11 @@ const FAQItem: React.FC<{ item: FAQItem }> = ({ item }) => {
   );
 };
 
-export default function FAQSectionServices({ faqData }: { faqData: FAQItem[] }) {
+export default function FAQSectionServices({
+  faqData,
+}: {
+  faqData: FAQItem[];
+}) {
   return (
     <section className="mx-auto w-full max-w-3xl px-4 ">
       <h2 className="mb-8 text-center text-4xl font-bold">

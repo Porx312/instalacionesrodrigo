@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import { useState, useRef } from "react"
-import { motion } from "framer-motion"
+import { useState, useRef } from "react";
+import { motion } from "framer-motion";
 import {
   HomeIcon,
   PipetteIcon,
@@ -17,21 +17,23 @@ import {
   WrenchIcon,
   DropletIcon,
   LayersIcon,
-} from "lucide-react"
-import Link from "next/link"
+} from "lucide-react";
+import Link from "next/link";
 
 const services = [
   {
     icon: BoltIcon,
     title: "Electricidad",
     href: "electricidad",
-    description: "Instalaciones y reparaciones eléctricas para hogares y negocios",
+    description:
+      "Instalaciones y reparaciones eléctricas para hogares y negocios",
   },
   {
     icon: FlameIcon,
     title: "Gas",
     href: "gas",
-    description: "Servicios profesionales de instalación y mantenimiento de gas",
+    description:
+      "Servicios profesionales de instalación y mantenimiento de gas",
   },
   {
     icon: PipetteIcon,
@@ -43,7 +45,8 @@ const services = [
     icon: ThermometerIcon,
     title: "Climatización",
     href: "climatizacion",
-    description: "Instalación y mantenimiento de sistemas de aire acondicionado",
+    description:
+      "Instalación y mantenimiento de sistemas de aire acondicionado",
   },
   {
     icon: FlameIcon,
@@ -55,9 +58,10 @@ const services = [
     icon: HomeIcon,
     title: "Reformas Integrales",
     href: "reformas-integrales",
-    description: "Transformación completa de espacios residenciales y comerciales",
+    description:
+      "Transformación completa de espacios residenciales y comerciales",
   },
- /*  {
+  /*  {
     icon: WindIcon,
     title: "Aerotermia",
     href: "aerotermia",
@@ -99,25 +103,25 @@ const services = [
     href: "aislamiento",
     description: "Mejora la eficiencia energética con nuestros sistemas de aislamiento",
   }, */
-]
+];
 
 const ItemServices = () => {
-  const [visibleCount, setVisibleCount] = useState(6)
-  const containerRef = useRef<HTMLDivElement>(null)
+  const [visibleCount, setVisibleCount] = useState(6);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   const toggleVisibility = () => {
     if (visibleCount === 6) {
-      setVisibleCount(services.length)
+      setVisibleCount(services.length);
     } else {
-      setVisibleCount(6)
+      setVisibleCount(6);
       if (containerRef.current) {
         containerRef.current.scrollIntoView({
           behavior: "smooth",
           block: "start",
-        })
+        });
       }
     }
-  }
+  };
 
   const container = {
     hidden: { opacity: 0 },
@@ -127,23 +131,27 @@ const ItemServices = () => {
         staggerChildren: 0.1,
       },
     },
-  }
+  };
 
   const item = {
     hidden: { y: 20, opacity: 0 },
     show: { y: 0, opacity: 1 },
-  }
+  };
 
   return (
     <div className="py-16 px-4 sm:px-6 lg:px-8 " ref={containerRef}>
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl md:text-5xl">
-            ¿Te Interesa un <span className="text-yellow-500">servicio en específico</span>?
+            ¿Te Interesa un{" "}
+            <span className="text-yellow-500">servicio en específico</span>?
           </h2>
           <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
             Selecciona uno de nuestros servicios profesionales y solicita un
-            <span className="font-semibold text-yellow-500"> presupuesto gratis</span>
+            <span className="font-semibold text-yellow-500">
+              {" "}
+              presupuesto gratis
+            </span>
           </p>
         </div>
 
@@ -155,7 +163,7 @@ const ItemServices = () => {
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12"
         >
           {services.slice(0, visibleCount).map((service) => {
-            const Icon = service.icon
+            const Icon = service.icon;
             return (
               <motion.div key={service.title} variants={item}>
                 <Link href={`/servicios/${service.href}`}>
@@ -164,8 +172,12 @@ const ItemServices = () => {
                       <div className="w-16 h-16 bg-yellow-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-yellow-500 transition-colors duration-300">
                         <Icon className="w-8 h-8 text-yellow-600 group-hover:text-white transition-colors duration-300" />
                       </div>
-                      <h3 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h3>
-                      <p className="text-gray-600 flex-grow mb-4">{service.description}</p>
+                      <h3 className="text-xl font-bold text-gray-900 mb-3">
+                        {service.title}
+                      </h3>
+                      <p className="text-gray-600 flex-grow mb-4">
+                        {service.description}
+                      </p>
                       <div className="flex items-center text-yellow-500 font-medium">
                         <span>Ver detalles</span>
                         <svg
@@ -186,7 +198,7 @@ const ItemServices = () => {
                   </div>
                 </Link>
               </motion.div>
-            )
+            );
           })}
         </motion.div>
 
@@ -212,7 +224,7 @@ const ItemServices = () => {
         )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ItemServices
+export default ItemServices;

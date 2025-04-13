@@ -120,7 +120,7 @@ export default function RootLayout({
           />
           <SectionContainer>
             <SearchProvider searchConfig={siteMetadata.search as SearchConfig}>
-              <Header/>
+              <Header />
               <main className="">{children}</main>
             </SearchProvider>
             <Footer />

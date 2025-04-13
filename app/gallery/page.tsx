@@ -60,7 +60,7 @@ const galleryItems = [
     id: "12",
     src: "https://res.cloudinary.com/dvqgkdvgg/image/upload/v1743937085/IMG-20250406-WA0017_rrknwl.jpg",
     alt: "",
-  }
+  },
 ];
 
 export default function Home() {

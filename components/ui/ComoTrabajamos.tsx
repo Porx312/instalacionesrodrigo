@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import type React from "react"
+import type React from "react";
 
-import { Building2, Users, School, HeartPulse } from "lucide-react"
-import { motion } from "framer-motion"
-import FormularioAlerta from "./FormularioAlerta"
+import { Building2, Users, School, HeartPulse } from "lucide-react";
+import { motion } from "framer-motion";
+import FormularioAlerta from "./FormularioAlerta";
 
 export default function AboutSection() {
   return (
@@ -12,23 +12,29 @@ export default function AboutSection() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* About Us Content */}
         <div className="bg-gradient-to-br bg-white rounded-xl p-6 md:p-8 shadow-md">
-          <h2 className="text-2xl md:text-3xl font-bold text-black mb-4">Sobre nosotros</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-black mb-4">
+            Sobre nosotros
+          </h2>
           <div className="space-y-4 text-gray-700">
             <p className="leading-relaxed">
-              RODRIGO INSTALACIONES S.L. ofrece servicios integrales en instalaciones, con un firme compromiso hacia la
-              excelencia. Trabajamos para satisfacer las necesidades y expectativas de nuestros clientes a través de la
-              mejora continua de nuestro Sistema de Gestión Integral.
+              RODRIGO INSTALACIONES S.L. ofrece servicios integrales en
+              instalaciones, con un firme compromiso hacia la excelencia.
+              Trabajamos para satisfacer las necesidades y expectativas de
+              nuestros clientes a través de la mejora continua de nuestro
+              Sistema de Gestión Integral.
             </p>
             <p className="leading-relaxed">
-              Contamos con un equipo de expertos y tecnología de punta, ocupándonos de cada detalle que tu empresa o
-              hogar necesita para lograr resultados de calidad.
+              Contamos con un equipo de expertos y tecnología de punta,
+              ocupándonos de cada detalle que tu empresa o hogar necesita para
+              lograr resultados de calidad.
             </p>
             <p className="leading-relaxed">
-              Te invitamos a conocer nuestras publicaciones, seguirnos en redes sociales y descubrir todo lo que Rodrigo
-              Instalaciones S.L. puede hacer por ti.
+              Te invitamos a conocer nuestras publicaciones, seguirnos en redes
+              sociales y descubrir todo lo que Rodrigo Instalaciones S.L. puede
+              hacer por ti.
             </p>
           </div>
-         <FormularioAlerta text="Trabaja Con Nosotros"/>
+          <FormularioAlerta text="Trabaja Con Nosotros" />
         </div>
 
         {/* Service Categories */}
@@ -42,7 +48,11 @@ export default function AboutSection() {
           <ServiceCard
             icon={<Building2 className="w-10 h-10 text-emerald-500" />}
             title="Administración"
-            items={["Administradores de fincas", "Grupos de inversores", "Entidades Bancarias"]}
+            items={[
+              "Administradores de fincas",
+              "Grupos de inversores",
+              "Entidades Bancarias",
+            ]}
           />
 
           <ServiceCard
@@ -59,18 +69,16 @@ export default function AboutSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 interface ServiceCardProps {
-  icon: React.ReactNode
-  title: string
-  items: string[]
+  icon: React.ReactNode;
+  title: string;
+  items: string[];
 }
 
 function ServiceCard({ icon, title, items }: ServiceCardProps) {
-
-  
   return (
     <motion.div
       whileHover={{ y: -5 }}
@@ -90,5 +98,5 @@ function ServiceCard({ icon, title, items }: ServiceCardProps) {
         </div>
       </div>
     </motion.div>
-  )
+  );
 }

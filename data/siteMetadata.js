@@ -4,7 +4,7 @@ const siteMetadata = {
   author: "Rodrigo",
   headerTitle: "Rodrigo Instalaciones",
   description:
-  "¡Bienvenido a Rodrigo Instalaciones S.L.! Soluciones expertas en instalaciones con innovación y confianza.",
+    "¡Bienvenido a Rodrigo Instalaciones S.L.! Soluciones expertas en instalaciones con innovación y confianza.",
   language: "en-us",
   theme: "light", // system, dark or light
   siteUrl: "https://tailwind-nextjs-starter-blog.vercel.app",

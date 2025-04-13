@@ -333,5 +333,6 @@ Using the template? Support this effort by giving a star on GitHub, sharing your
 ## Licence
 
 [MIT](https://github.com/timlrx/tailwind-nextjs-starter-blog/blob/main/LICENSE) © [Timothy Lin](https://www.timlrx.com)
-#   i n s t a l a c i o n e s r o d r i g o  
+#   i n s t a l a c i o n e s r o d r i g o 
+ 
  
