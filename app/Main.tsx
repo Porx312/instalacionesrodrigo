@@ -1,13 +1,9 @@
-import LocationMap from "@/components/LocationMap";
 import AboutSection from "@/components/ui/ComoTrabajamos";
-import ComoTrabajamos from "@/components/ui/ComoTrabajamos";
 import Experience from "@/components/ui/Experience";
 import FloatingWhatsAppButton from "@/components/ui/FloatingWhatsAppButton";
 import FormularioAlerta from "@/components/ui/FormularioAlerta";
 import ItemServices from "@/components/ui/ItemServices";
 import FAQSection from "@/components/ui/PreguntasFaq";
-import Services from "@/components/ui/Services";
-import Testimonios from "@/components/ui/Testimonios";
 import siteMetadata from "@/data/siteMetadata";
 import Image from "next/image";
 import Link from "next/link";
@@ -65,11 +61,6 @@ export default function Home() {
         <FloatingWhatsAppButton />
       </section>
 
-      {/*    {siteMetadata.newsletter?.provider && (
-        <div className="flex items-center justify-center pt-4">
-          <NewsletterForm />
-        </div>
-      )} */}
     </>
   );
 }
