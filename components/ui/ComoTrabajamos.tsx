@@ -3,7 +3,6 @@
 import type React from "react";
 
 import { Building2, Users, School, HeartPulse } from "lucide-react";
-import { motion } from "framer-motion";
 import FormularioAlerta from "./FormularioAlerta";
 
 export default function AboutSection() {
@@ -80,8 +79,7 @@ interface ServiceCardProps {
 
 function ServiceCard({ icon, title, items }: ServiceCardProps) {
   return (
-    <motion.div
-      whileHover={{ y: -5 }}
+    <div
       className={`bg-gradient-to-br  p-4 bg-white rounded-lg  shadow-md`}
     >
       <div className="flex items-start gap-3">
@@ -97,6 +95,6 @@ function ServiceCard({ icon, title, items }: ServiceCardProps) {
           </ul>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }

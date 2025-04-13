@@ -11,12 +11,6 @@ import {
   BoltIcon,
   FlameIcon,
   ThermometerIcon,
-  WindIcon,
-  SunIcon,
-  KeyIcon,
-  WrenchIcon,
-  DropletIcon,
-  LayersIcon,
 } from "lucide-react";
 import Link from "next/link";
 
