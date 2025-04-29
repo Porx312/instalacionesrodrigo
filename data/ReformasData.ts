@@ -9,6 +9,13 @@ import {
   Lightbulb,
   Plug,
   Wrench,
+  Cpu,
+  Bolt,
+  ShieldCheck,
+  Flame,
+  Thermometer,
+  Snowflake,
+  Ruler,
 } from "lucide-react";
 
 // Centralizamos los íconos para evitar redundancia y errores tipográficos.
@@ -23,6 +30,13 @@ const Icons = {
   Lightbulb,
   Plug,
   Wrench,
+  ShieldCheck,
+  Cpu,
+  Bolt,
+  Flame,
+  Thermometer,
+  Snowflake,
+  Ruler
 };
 
 type FAQItem = {
@@ -46,455 +60,406 @@ interface ServicesReformas {
 
 const ReformasData: ServicesReformas[] = [
   {
-    name: "Pintura",
-    title:
-      "¡Dale Vida y Color a Tu Hogar con las Reformas de Pintura de Reformas Ya Barcelona!",
+    name: "instalacion electrica",
+    title: "¡Ilumina Tu Hogar y Garantiza Tu Seguridad con Instalaciones Rodrigo!",
     description:
-      "¿Te gustaría que tu hogar tuviera el toque perfecto que siempre soñaste? ¡Hazlo realidad con una reforma de pintura que lo transforme por completo!",
+      "¿Necesitas una instalación eléctrica moderna, segura y eficiente? ¡Confía en nuestros expertos para transformar tu espacio con soluciones eléctricas de vanguardia!",
     doforyour: {
-      title: "¡Transformamos Tus Paredes en Obras de Arte!",
+      title: "¡Llevamos la Energía que Tu Hogar o Negocio Necesita!",
       icons: [
         {
-          icon: Icons.Palette,
-          text: "Colores Personalizados que Reflejan tu Estilo",
+          icon: Icons.Lightbulb,
+          text: "Instalaciones Eléctricas Completas y Certificadas",
         },
-        { icon: Icons.Droplet, text: "Pintura de Alta Calidad y Ecológica" },
-        { icon: Icons.Paintbrush, text: "Texturas y Acabados que Deslumbran" },
-        { icon: Icons.Home, text: "Pintura para Todos los Espacios" },
         {
-          icon: Icons.CheckCircle,
-          text: "Técnicas Avanzadas para Resultados Perfectos",
+          icon: Icons.ShieldCheck,
+          text: "Sistemas Seguros Cumpliendo Normativas Vigentes",
+        },
+        {
+          icon: Icons.Lightbulb,
+          text: "Iluminación Interior y Exterior Eficiente",
+        },
+        {
+          icon: Icons.Cpu,
+          text: "Automatización y Domótica para Mayor Comodidad",
+        },
+        {
+          icon: Icons.Bolt,
+          text: "Mantenimiento y Reparaciones Eléctricas Rápidas",
         },
       ],
     },
-    href: "reforma-pintura",
+    href: "electricidad",
     img: "https://res.cloudinary.com/dq0pfesxe/image/upload/v1733315345/coiwowmwsulew2w6gk05.jpg",
     FaqData: [
       {
-        question:
-          "¿Qué tipos de pintura son adecuados para interiores y exteriores?",
+        question: "¿Qué tipos de instalaciones eléctricas realizan?",
         answer:
-          "Cada espacio tiene sus necesidades específicas. Para interiores, recomendamos pinturas plásticas o acrílicas, conocidas por su fácil limpieza y acabado impecable. Para exteriores, los revestimientos resistentes a la intemperie son la mejor opción, ya que soportan condiciones climáticas extremas sin perder calidad. Contáctanos hoy y te ayudaremos a elegir la pintura perfecta para cada rincón de tu hogar.",
+          "Realizamos todo tipo de instalaciones eléctricas: desde obras nuevas y reformas integrales hasta ampliaciones, cambios de cuadros eléctricos y cableado. También instalamos iluminación interior y exterior, sistemas de automatización y puntos de recarga para vehículos eléctricos. ¡Cuéntanos tu proyecto y te asesoramos desde el primer momento!",
       },
       {
-        question:
-          "¿Cómo elegir el color de pintura adecuado para cada habitación?",
+        question: "¿Necesito una certificación eléctrica para mi vivienda o local?",
         answer:
-          "Los colores no solo transforman un espacio, también influyen en el ambiente y las emociones. Los tonos claros aportan amplitud, mientras que los cálidos generan ambientes acogedores. Nuestro equipo te guía para encontrar combinaciones que reflejen tu estilo y personalidad. Déjanos asesorarte y juntos crearemos un hogar lleno de vida, ¡contáctanos ahora!",
+          "Sí, en muchos casos es obligatorio contar con un Boletín Eléctrico o Certificado de Instalación (CIE), especialmente para nuevas altas, cambios de potencia o reformas importantes. Nosotros nos encargamos de todos los trámites para que tu instalación cumpla con la normativa vigente. ¡Déjalo en nuestras manos!",
       },
       {
-        question: "¿Cuál es el tiempo de secado de las diferentes pinturas?",
+        question: "¿Cómo saber si mi instalación eléctrica necesita ser renovada?",
         answer:
-          "El tiempo de secado varía según el tipo de pintura y las condiciones ambientales. Las pinturas al agua suelen secar al tacto en 4 a 6 horas, mientras que los esmaltes o pinturas al aceite requieren hasta 24 horas. Además, la ventilación y humedad del espacio pueden influir en este proceso. Confía en nosotros para planificar tu proyecto y optimizar el tiempo de ejecución. ¡Pide tu presupuesto ahora!",
+          "Si tu instalación tiene más de 20 años, presenta apagones frecuentes, enchufes deteriorados o saltan los automáticos con facilidad, es momento de renovarla. Una instalación moderna no solo mejora la seguridad, también optimiza el consumo energético. ¿Tienes dudas? ¡Solicita una revisión profesional sin compromiso!",
       },
       {
-        question: "¿Qué preparación requieren las superficies antes de pintar?",
+        question: "¿Qué medidas de seguridad siguen durante una instalación?",
         answer:
-          "Un acabado duradero comienza con una preparación adecuada. Esto incluye limpiar las superficies, reparar grietas y aplicar imprimación para garantizar una adhesión perfecta de la pintura. En nuestra empresa, nos encargamos de cada detalle para que no tengas que preocuparte. ¿Quieres un resultado profesional? Llámanos y haremos realidad tus ideas.",
+          "Nuestra prioridad es tu seguridad. Trabajamos siguiendo estrictamente las normativas vigentes (REBT) y utilizamos materiales homologados. Cada proyecto se ejecuta con protecciones adecuadas, pruebas de funcionamiento y verificación final. Con nosotros, tu hogar o negocio estará en las mejores manos.",
       },
       {
-        question:
-          " ¿Qué diferencias existen entre los acabados mate, satinado y brillante?",
+        question: "¿Ofrecen servicio de urgencias eléctricas en Barcelona?",
         answer:
-          "Los acabados mate son ideales para crear ambientes sobrios y elegantes, ya que disimulan imperfecciones y aportan un acabado suave; el satinado, con su brillo sutil, es perfecto para espacios de mucho uso, ya que es fácil de limpiar y resistente al desgaste; mientras que el brillante destaca por su acabado reflectante, ideal para detalles decorativos y muebles con estilo moderno. ¿No sabes cuál elegir? Escríbenos y juntos encontraremos el acabado perfecto para tu proyecto.",
+          "¡Por supuesto! Sabemos que los problemas eléctricos no avisan. Disponemos de un servicio de atención rápida para urgencias como cortes de luz, cortocircuitos o averías graves. Actuamos con la mayor rapidez para devolverte la normalidad. ¡Guarda nuestro contacto y llámanos cuando nos necesites!",
       },
       {
-        question:
-          "¿Cómo prevenir y tratar problemas de humedad o moho antes de pintar?",
+        question: "¿Qué beneficios tiene modernizar la instalación eléctrica?",
         answer:
-          "La humedad y el moho no solo afectan la estética de tus paredes, sino también tu salud. Antes de pintar, identificamos y eliminamos el problema desde la raíz, aplicando tratamientos específicos que evitan su reaparición. Protege tu hogar y mejora su apariencia con nuestra ayuda. ¡Contáctanos ahora y déjanos cuidar de cada detalle!",
+          "Modernizar tu instalación te proporciona mayor seguridad, eficiencia energética, capacidad para nuevos dispositivos y aumenta el valor de tu propiedad. Además, podrás acceder a nuevas tecnologías como la domótica y cargadores de vehículos eléctricos. ¡Actualiza tu sistema y disfruta de todas sus ventajas!",
       },
-    ],
+    ]
+    
   },
   {
-    name: "Reforma de Cocina",
-    title:
-      "¡Haz de Tu Cocina el Corazón de Tu Hogar con Reformas Ya Barcelona!",
-    description:
-      "¿Estás listo para que tu cocina sea el lugar que siempre has soñado? ¡Lo haremos realidad, y más rápido de lo que imaginas!",
-    doforyour: {
-      title: "¡Crea la Cocina de Tus Sueños, Hecha a Tu Medida!",
-      icons: [
-        { icon: Icons.Home, text: "Cocinas Personalizadas que Hablan de Ti" },
-        {
-          icon: Icons.Box,
-          text: "Almacenaje Inteligente y Estilo sin Compromisos",
-        },
-        { icon: Icons.Lightbulb, text: "Tecnología de Punta en Tu Cocina" },
-        { icon: Icons.Layers, text: "Superficies que Dejan Huella" },
-        { icon: Icons.Lightbulb, text: "Ilumina tu Cocina con Estilo" },
-      ],
-    },
-    href: "reforma-cocina",
-    img: "https://res.cloudinary.com/dq0pfesxe/image/upload/v1733315205/t5eej5opgmqvu1fjuvmg.jpg",
+    name: "instalacion de Gas",
+      title: "¡Lleva Confort y Seguridad a Tu Hogar con Instalaciones Rodrigo!",
+      description:
+        "¿Necesitas una instalación de gas segura, eficiente y certificada? ¡Confía en nuestros expertos para transformar tu hogar o negocio con soluciones de gas a medida!",
+      doforyour: {
+        title: "¡Llevamos el Gas que Tu Hogar o Negocio Necesita!",
+        icons: [
+          {
+            icon: Icons.Flame,
+            text: "Instalaciones de Gas Natural y Butano Certificadas",
+          },
+          {
+            icon: Icons.ShieldCheck,
+            text: "Sistemas de Gas Seguros Cumpliendo Toda la Normativa",
+          },
+          {
+            icon: Icons.Thermometer,
+            text: "Instalación de Calefacción y Calentadores de Agua",
+          },
+          {
+            icon: Icons.Home,
+            text: "Adaptaciones de Gas para Hogares y Locales Comerciales",
+          },
+          {
+            icon: Icons.Bolt,
+            text: "Reparaciones, Mantenimiento y Revisiones Periódicas",
+          },
+        ],
+      },
+    href: "gas",
+    img: "https://res.cloudinary.com/dq0pfesxe/image/upload/v1733315345/coiwowmwsulew2w6gk05.jpg",
     FaqData: [
       {
-        question: "¿Cuánto tiempo se tarda en reformar una cocina?",
+        question: "¿Qué tipos de instalaciones de gas realizan?",
         answer:
-          "El tiempo de reforma depende del tamaño y la complejidad del proyecto, pero generalmente varía entre 2 y 4 semanas. Las reformas más simples pueden completarse rápidamente, mientras que un proyecto más grande o personalizado puede tardar un poco más. ¡Contáctanos hoy mismo para un presupuesto detallado y una estimación de tiempo exacta para tu reforma!",
+          "Realizamos todo tipo de instalaciones de gas natural y butano: en viviendas, comunidades, locales comerciales e industrias. También nos encargamos de la instalación de calefacción, calentadores de agua, cocinas de gas y adaptaciones de sistemas. ¡Cuéntanos qué necesitas y te ayudamos a hacerlo realidad!",
       },
       {
-        question: "¿Cuál es el costo promedio de una reforma de cocina?",
+        question: "¿Necesito un certificado de instalación de gas para mi vivienda o local?",
         answer:
-          "El costo de una reforma de cocina varía según los materiales, el tamaño de la cocina y los acabados elegidos. Una reforma básica puede costar desde 5.000 €, mientras que una reforma de lujo puede superar los 20.000 €. ¿Quieres saber cuánto costaría reformar tu cocina? ¡Pide tu presupuesto personalizado ahora mismo!",
+          "Sí, es obligatorio contar con un Certificado de Instalación de Gas (CIG) en nuevas instalaciones, modificaciones importantes o al cambiar de suministradora. Nosotros nos ocupamos de realizar la instalación conforme a normativa y gestionar toda la documentación. ¡Deja todo en manos de profesionales!",
       },
       {
-        question:
-          "¿Qué materiales son recomendables para las encimeras de cocina?",
+        question: "¿Cómo saber si mi instalación de gas necesita revisión o renovación?",
         answer:
-          "Las opciones más recomendadas incluyen granito, cuarzo, acero inoxidable y madera. El granito es duradero y elegante, el cuarzo es resistente a manchas, y la madera aporta calidez. ¿No sabes qué material elegir? ¡Déjanos asesorarte y encontrar la mejor opción para tu cocina!",
+          "Las instalaciones de gas deben revisarse periódicamente para garantizar su seguridad. Si notas olor a gas, fallos en los aparatos o tienes una instalación antigua (más de 15 años), es importante revisarla. ¡Te ofrecemos diagnósticos y asesoramiento personalizado para garantizar tu tranquilidad!",
       },
       {
-        question:
-          "¿Es posible cambiar la distribución de la cocina durante la reforma?",
+        question: "¿Qué medidas de seguridad aplican en las instalaciones de gas?",
         answer:
-          "Sí, cambiar la distribución es posible si se ajustan correctamente las instalaciones de agua, gas y electricidad. Este tipo de reforma transforma completamente el espacio, pero requiere una planificación detallada. ¿Estás pensando en cambiar la distribución? ¡Contacta con nosotros y hacemos realidad la cocina de tus sueños!",
+          "Seguimos estrictamente la normativa vigente (RITE y reglamento de gas) usando materiales homologados y realizando pruebas de estanqueidad y funcionamiento en cada instalación. Nuestra prioridad es garantizar un servicio seguro, eficiente y duradero. ¡Confía en nuestra experiencia para proteger tu hogar!",
       },
       {
-        question: "¿Qué tipo de iluminación es ideal para una cocina?",
+        question: "¿Ofrecen servicio de urgencias de gas en Barcelona?",
         answer:
-          "Lo ideal es combinar iluminación general para todo el espacio, puntual en las áreas de trabajo (como la encimera) y decorativa para crear ambiente. La correcta iluminación no solo es funcional, sino que también resalta la belleza de tu cocina. ¡Deja que nuestros expertos planifiquen la iluminación perfecta para ti!",
+          "¡Claro que sí! Sabemos que las fugas o averías de gas requieren atención inmediata. Disponemos de un servicio de urgencias para actuar rápidamente en situaciones críticas, garantizando tu seguridad y la de tu familia. ¡Guarda nuestro número y contáctanos ante cualquier emergencia!",
       },
       {
-        question: "¿Es necesario obtener permisos para reformar una cocina?",
+        question: "¿Qué beneficios tiene actualizar una instalación de gas antigua?",
         answer:
-          "Si la reforma afecta a las instalaciones de agua, gas o la estructura de la casa, es necesario obtener permisos municipales. No te preocupes, nosotros gestionamos todo el proceso para asegurarnos de que tu reforma cumpla con las normativas locales. ¿Quieres saber más sobre permisos? ¡Contáctanos y te guiamos en todo el proceso!",
+          "Actualizar tu instalación de gas mejora la seguridad, reduce el riesgo de fugas, optimiza el consumo energético y cumple con la normativa actual. Además, puedes acceder a sistemas de calefacción más eficientes y modernos. ¡Actualiza tu instalación y gana en confort y tranquilidad!",
+      },
+    ]
+    
+    
+  },
+  {
+    name: "Fontaneria",
+    title: "¡Lleva Confort y Seguridad a Tu Hogar con Instalaciones Rodrigo!",
+  description:
+    "¿Necesitas servicios de fontanería fiables, rápidos y de alta calidad? ¡Confía en nuestros expertos para transformar tu hogar o negocio con soluciones de agua y saneamiento a medida!",
+  doforyour: {
+    title: "¡Llevamos el Agua que Tu Hogar o Negocio Necesita!",
+    icons: [
+      {
+        icon: Icons.Droplet,
+        text: "Instalaciones de Agua Potable y Saneamiento",
+      },
+      {
+        icon: Icons.ShieldCheck,
+        text: "Sistemas de Fontanería Seguros y Cumpliendo la Normativa",
+      },
+      {
+        icon: Icons.Thermometer,
+        text: "Instalación de Calentadores, Termos y Calderas",
+      },
+      {
+        icon: Icons.Home,
+        text: "Reformas Integrales de Baños, Cocinas y Locales",
+      },
+      {
+        icon: Icons.Bolt,
+        text: "Reparaciones de Fugas, Averías y Mantenimientos Urgentes",
       },
     ],
   },
-  {
-    name: "Reforma de Baño",
-    title: "¡Convierte tu Baño en un Oasis de Relax con Reformas Ya Barcelona!",
-    description:
-      "¿Sueñas con un baño moderno, funcional y elegante? ¡Reformas Ya Barcelona lo hace realidad con soluciones a medida que combinan confort y estilo!",
-    doforyour: {
-      title: "¡Diseñamos Baños que Te Harán Sentir en un Spa!",
-      icons: [
-        { icon: Icons.Home, text: "Diseños Personalizados que Encantan" },
-        { icon: Icons.Droplet, text: "Soluciones Eficientes y Sostenibles" },
-        { icon: Icons.Layers, text: "Materiales de Alta Calidad y Duraderos" },
-        { icon: Icons.Lightbulb, text: "Iluminación que Realza tu Espacio" },
-        {
-          icon: Icons.CheckCircle,
-          text: "Detalles y Acabados que Hacen la Diferencia",
-        },
-      ],
-    },
-    href: "reforma-banos",
-    img: "https://res.cloudinary.com/dq0pfesxe/image/upload/v1732883130/rexn3klewfnucdfzxbyz.jpg",
+    href: "fontaneria",
+    img: "https://res.cloudinary.com/dq0pfesxe/image/upload/v1733315345/coiwowmwsulew2w6gk05.jpg",
     FaqData: [
       {
-        question: "¿Cuánto cuesta reformar un baño?",
+        question: "¿Qué tipos de servicios de fontanería ofrecen?",
         answer:
-          "El costo de reformar un baño depende de varios factores: tamaño, materiales y tipo de reforma. Para una reforma básica, el precio puede estar entre 3.000 € y 6.000 €, mientras que una reforma de gama alta o de lujo puede superar los 10.000 €. ¿Quieres saber el precio exacto? ¡Contáctanos ahora mismo para un presupuesto personalizado sin compromiso y descubre cómo podemos ajustar la reforma a tu presupuesto!",
+          "Ofrecemos todo tipo de servicios de fontanería: instalación y reparación de redes de agua potable y saneamiento, cambio de griferías, montaje de sanitarios, instalación de calentadores, termos y calderas, así como reformas integrales de baños y cocinas. ¡Cuéntanos tu proyecto y nos encargamos de hacerlo realidad!",
       },
       {
-        question: "¿Cuánto tiempo se tarda en reformar un baño?",
+        question: "¿Necesito un certificado para una nueva instalación de fontanería?",
         answer:
-          "El tiempo de reforma depende de la magnitud del proyecto. Una reforma integral puede tardar entre 7 y 15 días, mientras que trabajos más simples (como la sustitución de azulejos o sanitarios) pueden completarse en 3 a 5 días. ¿Te gustaría saber cuánto tiempo llevará tu reforma? ¡Pide una consulta gratis y te damos un cronograma detallado según tus necesidades!",
+          "En algunos casos, especialmente en obras nuevas o reformas importantes, es necesario presentar un certificado de instalación de fontanería firmado por un profesional autorizado. Nosotros nos encargamos de todos los trámites para que tu instalación cumpla con la normativa vigente. ¡Te acompañamos en todo el proceso!",
       },
       {
-        question:
-          "¿Qué materiales son mejores para el suelo y las paredes del baño?",
+        question: "¿Cómo saber si mi instalación de fontanería necesita ser renovada?",
         answer:
-          "Para los suelos y paredes de baño, los materiales más recomendados son los azulejos cerámicos o porcelánicos, que son duraderos, fáciles de limpiar y resistentes a la humedad; el microcemento, ideal para un estilo moderno, sin juntas y de fácil mantenimiento; la piedra natural, que aporta un toque elegante y sofisticado; y los vinilos, una opción económica y resistente, perfecta para suelos. ¿No sabes por dónde empezar? ¡Déjanos asesorarte y ayudarte a elegir los materiales perfectos para tu baño según tus gustos y estilo!",
+          "Si notas fugas de agua, baja presión, malos olores, humedades o tu instalación tiene tuberías antiguas de plomo o hierro, es recomendable renovarla. Una instalación moderna evita problemas mayores y mejora el consumo de agua. ¡Solicita una inspección profesional sin compromiso!",
       },
       {
-        question:
-          "¿Es posible cambiar la distribución del baño durante la reforma?",
+        question: "¿Qué medidas de seguridad aplican en sus trabajos de fontanería?",
         answer:
-          "Sí, es posible cambiar la distribución del baño, moviendo sanitarios o modificando la ubicación de las instalaciones. Este tipo de reforma puede mejorar la funcionalidad y la estética de tu espacio. ¿Quieres optimizar tu baño? Contáctanos para crear una distribución que maximice tu espacio y se adapte a tus necesidades.",
+          "Trabajamos con materiales homologados, seguimos las normativas vigentes y realizamos pruebas de presión y estanqueidad en cada instalación. Además, priorizamos acabados de alta calidad y soluciones duraderas. ¡Confía en nosotros para proteger tu hogar o negocio!",
       },
       {
-        question: "¿Cómo hacer que un baño pequeño se vea más grande?",
+        question: "¿Ofrecen servicio de urgencias de fontanería en Barcelona?",
         answer:
-          "Para hacer que un baño pequeño se vea más grande, te recomendamos utilizar colores claros en las paredes y muebles, instalar espejos grandes para ampliar visualmente el espacio, optar por muebles suspendidos para liberar el suelo y elegir una ducha a ras de suelo para un aspecto más fluido y abierto. ¿Quieres ideas personalizadas? ¡Déjanos ayudarte a maximizar cada centímetro de tu baño y hacerlo lucir más amplio y funcional!",
+          "¡Sí! Disponemos de servicio de fontanería urgente para solucionar problemas como fugas de agua, roturas de tuberías, atascos o averías en calentadores. Actuamos de manera rápida y eficiente para evitar daños mayores. ¡Guarda nuestro número y contáctanos cuando nos necesites!",
       },
       {
-        question: "¿Es necesario obtener permisos para reformar un baño?",
+        question: "¿Qué ventajas tiene renovar las instalaciones de fontanería antiguas?",
         answer:
-          "Si la reforma afecta a las instalaciones de agua, gas o electricidad, necesitarás obtener permisos municipales. Reformas simples como cambiar azulejos o sanitarios no requieren permisos. ¿Te preocupa el tema de los permisos? Nosotros nos encargamos de todo para que tu reforma sea completamente legal y sin complicaciones. ¡Contáctanos y te ayudamos en cada paso del proceso!",
+          "Renovar tus tuberías y sistemas de fontanería mejora la seguridad, previene averías, optimiza el consumo de agua y revaloriza tu propiedad. Además, puedes instalar sistemas más eficientes y ecológicos. ¡Dale un nuevo impulso a tu hogar o negocio con una fontanería moderna!",
       },
-    ],
+    ]
+    
+    
+    
+  },
+    {
+      name: "Climatizacion",
+      title: "¡Controla la Temperatura de Tu Hogar con Instalaciones Rodrigo!",
+      description:
+        "¿Necesitas soluciones de climatización modernas, eficientes y a medida? ¡Confía en nuestros expertos para llevar confort y eficiencia energética a tu hogar o negocio durante todo el año!",
+      doforyour: {
+        title: "¡Climatizamos Tu Espacio para Tu Máximo Confort!",
+        icons: [
+          {
+            icon: Icons.Snowflake,
+            text: "Instalación de Aires Acondicionados y Bombas de Calor",
+          },
+          {
+            icon: Icons.ShieldCheck,
+            text: "Sistemas de Climatización Seguros y Eficientes",
+          },
+          {
+            icon: Icons.Thermometer,
+            text: "Calefacción, Refrigeración y Sistemas de Ventilación",
+          },
+          {
+            icon: Icons.Home,
+            text: "Climatización para Hogares, Oficinas y Locales Comerciales",
+          },
+          {
+            icon: Icons.Wrench,
+            text: "Mantenimiento, Reparaciones y Optimización Energética",
+          },
+        ],
+      },    
+    href: "climatizacion",
+    img: "https://res.cloudinary.com/dq0pfesxe/image/upload/v1733315345/coiwowmwsulew2w6gk05.jpg",
+    FaqData: [
+      {
+        question: "¿Qué tipos de servicios de climatización ofrecen?",
+        answer:
+          "Ofrecemos instalación, mantenimiento y reparación de sistemas de climatización como aires acondicionados, bombas de calor, sistemas de calefacción, ventilación mecánica y climatización integral para viviendas, oficinas y locales comerciales. ¡Cuéntanos qué necesitas y te ayudamos a lograr el máximo confort!",
+      },
+      {
+        question: "¿Necesito un certificado para instalar un sistema de climatización?",
+        answer:
+          "Sí, en instalaciones de climatización importantes o en locales comerciales suele ser necesario un certificado emitido por un instalador autorizado. Nosotros nos encargamos de que todo el proceso cumpla con la normativa vigente, para tu tranquilidad y seguridad. ¡Déjalo en manos de expertos!",
+      },
+      {
+        question: "¿Cómo saber si mi sistema de climatización necesita ser revisado o renovado?",
+        answer:
+          "Si notas que tu aire acondicionado o calefacción enfría o calienta menos, hace ruidos extraños, genera malos olores o consume demasiada energía, es momento de revisarlo. Un sistema moderno y eficiente mejora el confort y reduce el consumo energético. ¡Solicita una revisión profesional sin compromiso!",
+      },
+      {
+        question: "¿Qué medidas de seguridad aplican en las instalaciones de climatización?",
+        answer:
+          "Cumplimos estrictamente con las normativas técnicas vigentes (RITE y reglamento de gases refrigerantes), utilizamos materiales homologados y realizamos pruebas de rendimiento y seguridad en cada instalación. La calidad, eficiencia y seguridad son nuestra prioridad.",
+      },
+      {
+        question: "¿Ofrecen servicio de urgencias de climatización en Barcelona?",
+        answer:
+          "¡Claro! Contamos con un servicio de urgencias para atender averías de aires acondicionados, bombas de calor o sistemas de calefacción. Actuamos de forma rápida para que recuperes el confort en tu hogar o negocio cuanto antes. ¡Guarda nuestro contacto y llámanos si tienes una urgencia!",
+      },
+      {
+        question: "¿Qué ventajas tiene actualizar un sistema de climatización antiguo?",
+        answer:
+          "Actualizar tu sistema de climatización te permite mejorar la eficiencia energética, ahorrar en consumo eléctrico, reducir emisiones contaminantes y disfrutar de un mayor confort térmico durante todo el año. Además, los equipos modernos son más silenciosos y respetuosos con el medio ambiente. ¡Da el paso hacia un hogar más eficiente!",
+      },
+    ]
+    
+    
   },
   {
-    name: "Reforma Integral",
-    title:
-      "¡Transforma tu Hogar con Reformas Integrales de Calidad con Reformas Ya Barcelona!",
+    name: "Calefaccion",
+    title: "¡Calor Eficiente y Confortable con Instalaciones Rodrigo!",
     description:
-      "¿Quieres darle una nueva vida a tu hogar? Reformas Ya Barcelona te ofrece reformas integrales adaptadas a tus necesidades, combinando funcionalidad, estética y calidad en cada rincón de tu casa.",
+      "¿Buscas una solución de calefacción moderna, segura y eficiente? Nuestro equipo de expertos está listo para llevar el máximo confort térmico a tu hogar o negocio durante todo el invierno.",
     doforyour: {
-      title: "¡Rediseñamos tu Hogar de Arriba a Abajo!",
+      title: "¡Especialistas en Calefacción para Tu Máxima Comodidad!",
       icons: [
+        {
+          icon: Icons.Flame,
+          text: "Instalación de Sistemas de Calefacción Central y Localizada",
+        },
+        {
+          icon: Icons.ShieldCheck,
+          text: "Sistemas de Calefacción Seguros, Confiables y Duraderos",
+        },
+        {
+          icon: Icons.Thermometer,
+          text: "Calderas, Radiadores, Suelo Radiante y Más",
+        },
         {
           icon: Icons.Home,
-          text: "Proyectos Personalizados para Cada Espacio",
+          text: "Soluciones de Calefacción para Hogares, Oficinas y Negocios",
         },
-        { icon: Icons.Droplet, text: "Soluciones Innovadoras y Sostenibles" },
         {
-          icon: Icons.Layers,
-          text: "Materiales de Alta Gama y Larga Durabilidad",
-        },
-        { icon: Icons.Lightbulb, text: "Diseño de Interiores que Inspira" },
-        {
-          icon: Icons.CheckCircle,
-          text: "Acabados Impecables para un Toque de Distinción",
+          icon: Icons.Wrench,
+          text: "Mantenimiento, Reparaciones y Mejora de Eficiencia Energética",
         },
       ],
     },
-    href: "reforma-integral",
-    img: "https://res.cloudinary.com/dq0pfesxe/image/upload/v1733319801/fn7px9zicbna4mwqhm6z.jpg",
-    FaqData: [
+  href: "calefaccion",
+  img: "https://res.cloudinary.com/dq0pfesxe/image/upload/v1733315345/coiwowmwsulew2w6gk05.jpg",
+  FaqData: [
+    {
+      question: "¿Qué tipos de servicios de calefacción ofrecen?",
+      answer:
+        "Ofrecemos instalación, mantenimiento y reparación de sistemas de calefacción como calderas de gas, bombas de calor, radiadores, suelo radiante y estufas de pellets. Nos adaptamos a viviendas, oficinas y locales comerciales para garantizar el mejor confort térmico.",
+    },
+    {
+      question: "¿Necesito un certificado para instalar un sistema de calefacción?",
+      answer:
+        "Sí, para instalaciones de calefacción, especialmente en sistemas de gas o de gran potencia, es obligatorio contar con un certificado emitido por un instalador autorizado. Nosotros gestionamos toda la documentación necesaria para asegurar que tu instalación cumpla con la normativa vigente.",
+    },
+    {
+      question: "¿Cómo saber si mi sistema de calefacción necesita ser revisado o cambiado?",
+      answer:
+        "Si notas que tu calefacción calienta menos, consume más energía de lo normal, hace ruidos extraños o presenta fugas, es momento de revisarla. Un sistema eficiente no solo mejora el confort, sino que también reduce costes en tus facturas. ¡Te asesoramos sin compromiso!",
+    },
+    {
+      question: "¿Qué medidas de seguridad aplican en las instalaciones de calefacción?",
+      answer:
+        "Seguimos estrictamente las normativas de seguridad en instalaciones térmicas (RITE) y utilizamos solo materiales certificados. Además, realizamos pruebas de funcionamiento y revisiones de seguridad en cada proyecto para garantizar instalaciones seguras, eficientes y duraderas.",
+    },
+    {
+      question: "¿Ofrecen servicio de urgencias en sistemas de calefacción en Barcelona?",
+      answer:
+        "¡Sí! Disponemos de un servicio de urgencias para atender averías en sistemas de calefacción. Sabemos lo importante que es mantener tu hogar cálido, especialmente en invierno, por eso actuamos rápidamente para devolverte el confort lo antes posible.",
+    },
+    {
+      question: "¿Qué ventajas tiene actualizar un sistema de calefacción antiguo?",
+      answer:
+        "Renovar tu sistema de calefacción mejora la eficiencia energética, reduce tus facturas de energía y proporciona un confort más homogéneo. Además, los nuevos sistemas son más respetuosos con el medio ambiente y cumplen con normativas actuales de seguridad y eficiencia.",
+    },
+  ]
+  
+},
+{
+  name: "ReformasIntegrales",
+  title: "¡Transforma Tu Espacio con Instalaciones Rodrigo!",
+  description:
+    "¿Buscas una reforma integral moderna, funcional y adaptada a tus necesidades? Nuestro equipo de profesionales está listo para renovar por completo tu hogar o negocio, garantizando calidad, eficiencia y diseño en cada detalle.",
+  doforyour: {
+    title: "¡Especialistas en Reformas para Crear Espacios Únicos!",
+    icons: [
       {
-        question: "¿Cuánto cuesta una reforma integral?",
-        answer:
-          "El costo de una reforma integral depende del tamaño y los materiales, con precios desde 25.000 € para una vivienda de 55 m². Este precio incluye todo: demolición, instalaciones, suelos, paredes y acabados. Cada reforma es única, por lo que ajustamos el presupuesto según tus necesidades y estilo. ¿Quieres un presupuesto a medida? ¡Contáctanos y te proporcionamos una estimación personalizada",
+        icon: Icons.Home,
+        text: "Reformas Integrales de Viviendas, Oficinas y Locales Comerciales",
       },
       {
-        question: "¿Cuánto tiempo se tarda en realizar una reforma integral?",
-        answer:
-          "El tiempo de una reforma integral depende del alcance del proyecto; generalmente, una reforma completa de 60 a 90 m² puede tardar entre 2 y 3 meses, mientras que reformas más pequeñas, como un baño o cocina, pueden estar listas en 1 a 4 semanas.¿Tienes una fecha límite? ¡Déjanos ajustar los plazos para que tu reforma se realice sin contratiempos!",
+        icon: Icons.Paintbrush,
+        text: "Diseño de Interiores, Decoración y Acabados Personalizados",
       },
       {
-        question: "¿Qué incluye una reforma integral?",
-        answer:
-          "Una reforma integral cubre todo, desde la demolición hasta los acabados finales: reformas en instalaciones eléctricas, fontanería, suelos, paredes, y más. Nos encargamos de todo para que tu hogar quede renovado y funcional, con acabados de alta calidad.¿Te gustaría transformar tu hogar por completo? ¡Contáctanos y comenzamos a planificar tu reforma integral!",
+        icon: Icons.Bolt,
+        text: "Fontanería, Electricidad, Carpintería y Albañilería",
       },
       {
-        question: "¿Es necesario obtener permisos para una reforma integral?",
-        answer:
-          "Sí, muchas reformas requieren permisos para cumplir con las normativas locales, especialmente si afectan a la estructura o instalaciones. Nosotros nos encargamos de gestionar todos los permisos necesarios, asegurando que tu reforma sea completamente legal y sin complicaciones.¿Te preocupa el papeleo? ¡Déjanos gestionar los permisos por ti y disfruta de una reforma sin estrés!",
+        icon: Icons.Ruler,
+        text: "Proyectos a Medida con Asesoramiento Técnico y Estético",
       },
       {
-        question: "¿Puedo elegir los materiales para mi reforma?",
-        answer:
-          "Claro, puedes elegir los materiales que mejor se adapten a tu estilo y presupuesto. Te asesoramos en la selección de materiales de alta calidad, asegurándonos de que cada elección encaje perfectamente con tu visión y necesidades.¿Necesitas ayuda para elegir? ¡Contáctanos y te guiamos en la selección de los mejores materiales!",
-      },
-      {
-        question: " ¿Qué garantías ofrecen en las reformas integrales?",
-        answer:
-          "Ofrecemos una garantía de calidad sobre la mano de obra y los materiales utilizados, asegurándonos de que tu reforma cumpla con los más altos estándares. Si surge algún problema durante el período de garantía, nos encargamos de solucionarlo sin costo adicional.¿Quieres saber más sobre nuestras garantías? ¡Hablemos y te explicamos todo en detalle!",
+        icon: Icons.ShieldCheck,
+        text: "Calidad, Seguridad y Cumplimiento de Normativas",
       },
     ],
+  },
+  
+href: "reformas-integrales",
+img: "https://res.cloudinary.com/dq0pfesxe/image/upload/v1733315345/coiwowmwsulew2w6gk05.jpg",
+FaqData: [
+  {
+    question: "¿Qué tipos de servicios de reformas integrales ofrecen?",
+    answer:
+      "Ofrecemos reformas completas de viviendas, oficinas y locales comerciales. Nos encargamos de todo: diseño, demolición, albañilería, fontanería, electricidad, carpintería, pintura y acabados, entregándote un espacio renovado y a medida.",
   },
   {
-    name: "Pladur",
-    title:
-      "¡Crea Espacios Versátiles y Modernos con Instalaciones de Pladur de Reformas Ya Barcelona!",
-    description:
-      "El pladur es la solución ideal para construir espacios funcionales y estéticamente impecables. Desde tabiques hasta techos y revestimientos, te ofrecemos acabados de alta calidad que se adaptan a cualquier estilo.",
-    doforyour: {
-      title: "¡Reinventa tu Hogar o Local con Pladur!",
-      icons: [
-        { icon: Icons.Layers, text: "Tabiques y Techos a Medida" },
-        { icon: Icons.Lightbulb, text: "Sistemas de Iluminación Integrados" },
-        { icon: Icons.Home, text: "Aislamiento Térmico y Acústico" },
-        { icon: Icons.CheckCircle, text: "Montaje Rápido y Duradero" },
-        {
-          icon: Icons.Box,
-          text: "Soluciones Creativas para Espacios Reducidos",
-        },
-      ],
-    },
-    href: "reforma-pladur",
-    img: "https://res.cloudinary.com/dq0pfesxe/image/upload/v1733397012/wixolg0ovovz4damhrn8.jpg",
-    FaqData: [
-      {
-        question: "¿Qué es el Pladur y para qué se utiliza?",
-        answer:
-          "El Pladur es un material compuesto por yeso entre dos capas de cartón, ideal para crear tabiques, techos y revestimientos interiores. Su facilidad de instalación, versatilidad y propiedades de aislamiento térmico y acústico lo hacen perfecto para reformas rápidas y eficaces.¿Listo para transformar tu hogar con Pladur? ¡Contáctanos y te asesoramos sobre la mejor opción para tu proyecto!",
-      },
-      {
-        question: "¿Cuáles son las ventajas de usar Pladur en una reforma?",
-        answer:
-          "El Pladur es ligero, económico y permite realizar reformas rápidas con acabados profesionales. Ofrece una excelente aislación térmica y acústica, lo que mejora el confort de tu hogar sin complicaciones.¿Quieres aprovechar sus ventajas en tu reforma? ¡Escríbenos y te ayudamos a elegir la mejor solución para ti!",
-      },
-      {
-        question: "¿Es el Pladur resistente a la humedad y al fuego?",
-        answer:
-          "Sí, existen variantes como el Pladur HR (resistente a la humedad) y el Pladur RF (resistente al fuego), ideales para espacios como baños, cocinas y zonas con mayor riesgo de incendio.¿Te gustaría saber qué Pladur es el más adecuado para tu hogar? ¡Consulta con nosotros y te guiamos en la elección perfecta!",
-      },
-      {
-        question: "¿Se puede pintar el Pladur después de instalarlo?",
-        answer:
-          "¡Por supuesto! El Pladur se puede pintar fácilmente una vez instalado, brindándote la posibilidad de personalizar tus espacios según tus gustos. Solo asegúrate de preparar bien la superficie para un acabado duradero.¿Necesitas ayuda para elegir la pintura perfecta? ¡Contáctanos y te asesoramos para un acabado impecable!",
-      },
-      {
-        question: "¿Cuánto cuesta instalar Pladur?",
-        answer:
-          "El costo de instalar Pladur depende de la superficie, el tipo de material y la complejidad de la instalación. Generalmente, los precios varían entre 15-25 €/m², pero cada proyecto es único.¿Quieres un presupuesto personalizado? ¡Solicita tu cotización ahora y te damos un precio ajustado a tus necesidades!",
-      },
-      {
-        question:
-          "¿Se puede instalar Pladur sobre superficies irregulares o viejas?",
-        answer:
-          "Sí, el Pladur puede instalarse sobre superficies irregulares, aunque es importante prepararlas adecuadamente para asegurar que el material se fije correctamente y tenga una larga duración.¿Tu superficie necesita preparación? ¡Déjanos ayudarte a poner todo en orden y hacer la instalación sin problemas!",
-      },
-    ],
+    question: "¿Necesito permisos o licencias para realizar una reforma integral?",
+    answer:
+      "Sí, en la mayoría de los casos es necesario solicitar permisos o licencias de obra ante el ayuntamiento, especialmente si se modifican elementos estructurales o fachadas. Nosotros te asesoramos y nos encargamos de la gestión de toda la documentación necesaria.",
   },
   {
-    name: "Fontanería",
-    title:
-      "¡Soluciones de Fontanería Eficientes y Confiables con Reformas Ya Barcelona!",
-    description:
-      "¿Problemas con tus tuberías o necesitas renovar tu sistema de fontanería? Nuestro equipo de profesionales garantiza instalaciones modernas, eficientes y libres de preocupaciones.",
-    doforyour: {
-      title: "¡Hacemos que el Agua Fluya sin Problemas!",
-      icons: [
-        { icon: Icons.Droplet, text: "Instalaciones y Reparaciones Complejas" },
-        { icon: Icons.Wrench, text: "Mantenimiento Preventivo y Correctivo" },
-        { icon: Icons.Plug, text: "Sistemas de Agua Caliente Eficientes" },
-        { icon: Icons.Box, text: "Renovación Completa de Baños y Cocinas" },
-        { icon: Icons.CheckCircle, text: "Soluciones Rápidas y Garantizadas" },
-      ],
-    },
-    href: "reforma-fontaneria",
-    img: "https://res.cloudinary.com/dq0pfesxe/image/upload/v1733397175/ttyz9lpmjzvxprg4pc26.jpg",
-    FaqData: [
-      {
-        question: "¿Qué provoca una baja presión de agua en mi hogar?",
-        answer:
-          "La baja presión puede deberse a obstrucciones en las tuberías, válvulas mal ajustadas o sistemas antiguos. También podría ser un problema en la red general. Resolverlo requiere una revisión profesional para garantizar un suministro eficiente.¿Te afecta la presión baja? ¡Déjanos ayudarte a restablecer el flujo perfecto en tu hogar!",
-      },
-      {
-        question: " ¿Cuándo es necesario cambiar las tuberías de una vivienda?",
-        answer:
-          "Es hora de cambiar las tuberías si notas fugas frecuentes, corrosión o si están hechas de materiales obsoletos como el plomo. Renovarlas mejora la calidad del agua, evita averías y asegura un sistema más eficiente y duradero.¿Tienes dudas? ¡Contacta con nosotros y modernizamos tu instalación con la mejor calidad!",
-      },
-      {
-        question:
-          "¿Qué materiales son los mejores para instalaciones de fontanería?",
-        answer:
-          "El cobre, el PVC y el polietileno son las opciones más utilizadas. El cobre es ideal para agua caliente por su durabilidad, el PVC es económico y práctico para desagües, y el polietileno es flexible y fácil de instalar. Elegir el adecuado depende de tus necesidades.¿No sabes qué material elegir? ¡Nosotros te asesoramos para garantizar la solución perfecta!",
-      },
-      {
-        question: "¿Cómo evitar atascos en los desagües?",
-        answer:
-          "Evita tirar grasas, aceites o restos sólidos por los desagües y usa rejillas protectoras. Limpiar regularmente los sistemas de drenaje es clave para prevenir atascos. Si el problema persiste, lo mejor es actuar rápido para evitar daños mayores.¿Atascos recurrentes? ¡Llámanos y lo solucionamos de inmediato!",
-      },
-      {
-        question:
-          "¿Es necesario solicitar permisos para renovar la fontanería?",
-        answer:
-          "Sí, las reformas grandes o que implican cambios en las tuberías suelen requerir permisos municipales. Estos garantizan que el trabajo cumpla con las normativas. Nosotros nos encargamos de todo para que tú no tengas que preocuparte. ¿Necesitas ayuda con los permisos? ¡Déjanos gestionar todo por ti y disfruta de una reforma sin complicaciones!",
-      },
-      {
-        question: "¿Cuánto cuesta renovar la instalación de fontanería?",
-        answer:
-          "El costo depende del tamaño del proyecto, los materiales y la complejidad del trabajo. Aunque supone una inversión, renueva tu hogar, previene averías y mejora la calidad de vida.¿Buscas un presupuesto transparente? ¡Pide tu cotización gratuita y descubre cuánto puedes ganar renovando tu instalación!",
-      },
-    ],
+    question: "¿Cuánto tiempo suele durar una reforma integral?",
+    answer:
+      "La duración depende del tamaño y la complejidad del proyecto, pero una reforma integral suele tardar entre 2 y 6 meses. Realizamos una planificación detallada para cumplir con los plazos establecidos y mantenerte informado en cada etapa del proceso.",
   },
   {
-    name: "Reforma de Oficinas",
-    title:
-      "¡Transforma tu Espacio de Trabajo con las Reformas de Oficinas de Reformas Ya Barcelona!",
-    description:
-      "¿Buscas una oficina moderna, funcional y acorde a las necesidades de tu equipo? Reformas Ya Barcelona convierte cualquier espacio en un lugar productivo y estilizado.",
-    doforyour: {
-      title: "¡Crea Oficinas que Inspiran y Motivan!",
-      icons: [
-        { icon: Icons.Home, text: "Diseño Ergonométrico y Funcional" },
-        { icon: Icons.Lightbulb, text: "Iluminación Profesional y Ambiental" },
-        { icon: Icons.Box, text: "Espacios de Almacenaje Inteligentes" },
-        { icon: Icons.Palette, text: "Acabados Modernos y Elegantes" },
-        {
-          icon: Icons.CheckCircle,
-          text: "Adecuación Técnica y Cableado Eficiente",
-        },
-      ],
-    },
-    href: "reforma-oficinas",
-    img: "https://res.cloudinary.com/dq0pfesxe/image/upload/v1733397096/y4qgps38o0squksbboto.jpg",
-    FaqData: [
-      {
-        question: "¿Cuánto cuesta reformar una oficina?",
-        answer:
-          "El costo depende del tamaño, la complejidad de la reforma y los materiales seleccionados. Las reformas más simples, como pintura y cambio de mobiliario, son más asequibles, pero una reforma integral que incluya cambios en la distribución o instalaciones puede aumentar el precio.¡Solicita tu presupuesto personalizado! Te ayudamos a encontrar la opción que mejor se ajuste a tu presupuesto y necesidades.",
-      },
-      {
-        question: "¿Qué permisos necesito para reformar una oficina?",
-        answer:
-          "Si la reforma implica cambios en la estructura o instalaciones (electricidad, fontanería), necesitarás permisos específicos. Nosotros nos encargamos de gestionar toda la parte legal y administrativa, garantizando que todo cumpla con la normativa vigente.¡Deja que nosotros nos encarguemos de los permisos! Así podrás centrarte en lo que realmente importa: tu negocio.",
-      },
-      {
-        question:
-          "¿Cómo evitar interrumpir las actividades laborales durante la reforma?",
-        answer:
-          "Planificamos la reforma en fases y fuera del horario laboral para evitar afectar la productividad de tu equipo. Nos aseguramos de que las interrupciones sean mínimas, sin comprometer la calidad del trabajo. ¡Contáctanos y planifiquemos juntos una reforma sin interrupciones! Te ayudamos a mantener el flujo de trabajo sin inconvenientes.",
-      },
-      {
-        question: "¿Qué materiales son ideales para una reforma de oficina?",
-        answer:
-          "Para una reforma de oficina, recomendamos materiales duraderos y de fácil mantenimiento como el vidrio, vinílico o madera. También puedes optar por opciones ecológicas que mejoren la sostenibilidad. Te asesoramos en cada elección para adaptarnos a tu estilo y necesidades. ¡Consulta con nuestros expertos! Te ayudamos a elegir los materiales más adecuados para tu oficina.",
-      },
-      {
-        question:
-          "¿Cuáles son las tendencias de diseño para oficinas modernas?",
-        answer:
-          "Las oficinas modernas promueven espacios abiertos, zonas colaborativas y mobiliario ergonómico para favorecer la productividad. Incorporar tecnología y elementos sostenibles también es clave para crear un ambiente atractivo y funcional.¡Haz que tu oficina inspire! Contáctanos y diseñamos un espacio que mejore la productividad y bienestar de tu equipo.",
-      },
-      {
-        question: "¿Cuánto tiempo toma una reforma de oficina?",
-        answer:
-          "El tiempo varía según la magnitud de la reforma. Las reformas pequeñas, como la pintura o cambio de mobiliario, pueden tomar entre 2 y 4 semanas. Las reformas más grandes, que incluyen modificaciones estructurales o cambios importantes en las instalaciones, pueden tardar entre 1 y 3 meses. ¡Solicita tu cronograma personalizado! Te damos un plan claro y ajustado a tus plazos, para que tu oficina esté lista a tiempo.",
-      },
-    ],
+    question: "¿Qué garantías ofrecen en las reformas integrales?",
+    answer:
+      "Todas nuestras reformas cuentan con garantía de calidad, cumplimiento de normativas y materiales certificados. Además, ofrecemos garantía post-obra para tu tranquilidad, resolviendo cualquier incidencia que pudiera surgir tras la entrega.",
   },
   {
-    name: "Obras Menores",
-    title: "¡Pequeñas Obras, Grandes Resultados con Reformas Ya Barcelona!",
-    description:
-      "¿Necesitas ajustes o reparaciones rápidas? En Reformas Ya Barcelona atendemos pequeñas obras con el mismo compromiso y calidad que los grandes proyectos.",
-    doforyour: {
-      title: "¡Resolvemos Tus Necesidades con Rapidez y Precisión!",
-      icons: [
-        { icon: Icons.Wrench, text: "Reparaciones y Ajustes Precisos" },
-        { icon: Icons.Paintbrush, text: "Pequeños Trabajos de Pintura" },
-        { icon: Icons.Layers, text: "Revestimientos y Mejoras Puntuales" },
-        { icon: Icons.Box, text: "Montaje de Muebles y Elementos Decorativos" },
-        { icon: Icons.CheckCircle, text: "Atención Rápida y Profesional" },
-      ],
-    },
-    href: "obras-menores",
-    img: "https://res.cloudinary.com/dq0pfesxe/image/upload/v1733396757/rvy4iclukm3duyo48wsl.jpg",
-    FaqData: [
-      {
-        question: "¿Qué se considera una obra menor?",
-        answer:
-          "Las obras menores son reformas que no afectan la estructura del edificio, como la renovación de suelos, pintura o cambios en fontanería. Son intervenciones rápidas y de bajo impacto.¡Transforma tu hogar hoy! Contáctanos y te ayudamos a mejorar tu espacio con soluciones eficaces.",
-      },
-      {
-        question:
-          "¿Es necesario solicitar permisos para realizar una obra menor?",
-        answer:
-          "Generalmente, las obras menores no requieren permisos, pero si afectan instalaciones o la fachada, pueden ser necesarios. Nosotros gestionamos todos los permisos para ti.¡Deja los trámites en nuestras manos! Contáctanos y nos encargamos de todo el proceso para que no tengas que preocuparte.",
-      },
-      {
-        question: "¿Cuánto tiempo suele durar una obra menor?",
-        answer:
-          "Las obras menores suelen completarse en pocos días o una semana, dependiendo de la intervención. Nos aseguramos de cumplir con los plazos establecidos.¡Hazlo rápido y bien! Solicita tu cronograma personalizado y disfruta de tu reforma en el menor tiempo posible.",
-      },
-      {
-        question:
-          "¿Cuáles son las obras menores más comunes en reformas integrales?",
-        answer:
-          "Renovación de baños, instalación de nuevos suelos, cambios de iluminación y redistribución de espacios. Son reformas fáciles de realizar que transforman tu espacio.¡Dale un nuevo aire a tu hogar! Consulta con nosotros y te ayudamos a elegir la reforma que más se ajuste a tus necesidades.",
-      },
-      {
-        question:
-          "¿Es más económico realizar una obra menor que una reforma completa?",
-        answer:
-          "Sí, las obras menores son más asequibles porque no requieren modificaciones estructurales. Son perfectas para pequeñas mejoras sin gran inversión.¡Consulta tu presupuesto! Te ofrecemos soluciones adaptadas a tu presupuesto para renovar tu hogar de manera económica.",
-      },
-      {
-        question:
-          "¿Puedo realizar una obra menor por mi cuenta o es recomendable contratar a un profesional?",
-        answer:
-          "Aunque algunas reformas menores son fáciles, siempre es mejor contar con profesionales para garantizar que el trabajo sea seguro, eficiente y conforme a la normativa.¡Confía en los expertos! Déjanos encargarnos de todo para obtener un resultado perfecto y sin complicaciones.",
-      },
-    ],
+    question: "¿Puedo seguir viviendo en casa durante la reforma?",
+    answer:
+      "Dependerá del alcance de la reforma. En proyectos muy grandes o estructurales recomendamos buscar alojamiento temporal. En reformas parciales o bien organizadas, es posible coordinar el trabajo por zonas para minimizar molestias.",
   },
+  {
+    question: "¿Qué ventajas tiene contratar una empresa especializada en reformas integrales?",
+    answer:
+      "Contar con profesionales evita retrasos, problemas técnicos y sobrecostes. Gestionamos cada detalle del proyecto, coordinamos todos los oficios, optimizamos tiempos y garantizamos un resultado final de alta calidad y adaptado a tus necesidades.",
+  },
+]
+
+},
 ];
 
 export default ReformasData;

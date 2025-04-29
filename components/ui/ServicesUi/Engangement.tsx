@@ -38,7 +38,7 @@ export default function EngagementSection({ name }: Props) {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-4xl font-bold mb-6">
-              ¿Por Qué Elegir Reformas Ya Barcelona?
+              ¿Por Qué Elegir instalaciones Rodrigo?
             </h2>
             <p className="text-xl mb-8">
               Porque entendemos lo que quieres, y lo hacemos realidad.
