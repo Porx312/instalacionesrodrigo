@@ -79,9 +79,7 @@ interface ServiceCardProps {
 
 function ServiceCard({ icon, title, items }: ServiceCardProps) {
   return (
-    <div
-      className={`bg-gradient-to-br  p-4 bg-white rounded-lg  shadow-md`}
-    >
+    <div className={`bg-gradient-to-br  p-4 bg-white rounded-lg  shadow-md`}>
       <div className="flex items-start gap-3">
         <div className="mt-1">{icon}</div>
         <div>

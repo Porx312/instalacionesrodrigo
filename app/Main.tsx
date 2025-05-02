@@ -60,7 +60,6 @@ export default function Home() {
         <FAQSection />
         <FloatingWhatsAppButton />
       </section>
-
     </>
   );
 }

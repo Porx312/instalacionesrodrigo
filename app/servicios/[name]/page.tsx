@@ -56,7 +56,7 @@ export default async function Page({
       />
       <VentajasSection />
       <EngagementSection name={item.name} />
-      <FloatingWhatsAppButton />  
+      <FloatingWhatsAppButton />
       <FAQSectionServices faqData={item.FaqData} />
     </>
   );
