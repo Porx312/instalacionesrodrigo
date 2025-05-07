@@ -4,14 +4,15 @@ import UseFormEmail from "Hooks/UseFormEmail";
 import ReactModal from "react-modal";
 
 const servicios = [
-  "Reforma Integral",
-  "Reforma de Baño",
-  "Reforma de Cocina",
+  "Instalacion Electrica",
+  "Calefaccion",
+  "Instalacion de Agua",
+  "Fontaneria",
+  "Reformas Integrales",
+  "Paneles Solares",
+  "Trabajos Verticales",
   "Pintura",
-  "Pladur",
-  "Fontanería",
-  "Reforma de Oficinas",
-  "Obras Menores",
+  "Otros",
 ];
 interface FormularioAlertaProps {
   className?: string;

@@ -91,7 +91,7 @@ const ReformasData: ServicesReformas[] = [
       ],
     },
     href: "electricidad",
-    img: "https://res.cloudinary.com/dq0pfesxe/image/upload/v1733315345/coiwowmwsulew2w6gk05.jpg",
+    img: "https://res.cloudinary.com/dvqgkdvgg/image/upload/t_Banner 16:9/v1743937087/IMG-20250406-WA0008_ot8iek.jpg",
     FaqData: [
       {
         question: "¿Qué tipos de instalaciones eléctricas realizan?",
@@ -158,7 +158,7 @@ const ReformasData: ServicesReformas[] = [
       ],
     },
     href: "gas",
-    img: "https://res.cloudinary.com/dq0pfesxe/image/upload/v1733315345/coiwowmwsulew2w6gk05.jpg",
+    img: "https://res.cloudinary.com/dvqgkdvgg/image/upload/v1743937087/IMG-20250406-WA0007_sq4l68.jpg",
     FaqData: [
       {
         question: "¿Qué tipos de instalaciones de gas realizan?",
@@ -227,7 +227,7 @@ const ReformasData: ServicesReformas[] = [
       ],
     },
     href: "fontaneria",
-    img: "https://res.cloudinary.com/dq0pfesxe/image/upload/v1733315345/coiwowmwsulew2w6gk05.jpg",
+    img: "https://res.cloudinary.com/dvqgkdvgg/image/upload/v1743937086/IMG-20250406-WA0022_wu9cj1.jpg",
     FaqData: [
       {
         question: "¿Qué tipos de servicios de fontanería ofrecen?",
@@ -296,7 +296,7 @@ const ReformasData: ServicesReformas[] = [
       ],
     },
     href: "climatizacion",
-    img: "https://res.cloudinary.com/dq0pfesxe/image/upload/v1733315345/coiwowmwsulew2w6gk05.jpg",
+    img: "https://res.cloudinary.com/dvqgkdvgg/image/upload/v1743937085/IMG-20250406-WA0018_bzonse.jpg",
     FaqData: [
       {
         question: "¿Qué tipos de servicios de climatización ofrecen?",
@@ -366,7 +366,7 @@ const ReformasData: ServicesReformas[] = [
       ],
     },
     href: "calefaccion",
-    img: "https://res.cloudinary.com/dq0pfesxe/image/upload/v1733315345/coiwowmwsulew2w6gk05.jpg",
+    img: "https://res.cloudinary.com/dvqgkdvgg/image/upload/v1743937085/IMG-20250406-WA0002_esuyov.jpg",
     FaqData: [
       {
         question: "¿Qué tipos de servicios de calefacción ofrecen?",
@@ -423,7 +423,7 @@ const ReformasData: ServicesReformas[] = [
         },
         {
           icon: Icons.Bolt,
-          text: "Fontanería, Electricidad, Carpintería y Albañilería",
+          text: "Fontanería, Electricidad, Agua, Calefaccion, Verticales",
         },
         {
           icon: Icons.Ruler,
@@ -437,7 +437,7 @@ const ReformasData: ServicesReformas[] = [
     },
 
     href: "reformas-integrales",
-    img: "https://res.cloudinary.com/dq0pfesxe/image/upload/v1733315345/coiwowmwsulew2w6gk05.jpg",
+    img: "https://res.cloudinary.com/dvqgkdvgg/image/upload/t_Banner 16:9/v1743937087/IMG-20250406-WA0010_qlusq3.jpg",
     FaqData: [
       {
         question: "¿Qué tipos de servicios de reformas integrales ofrecen?",

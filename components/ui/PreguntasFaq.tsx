@@ -7,39 +7,34 @@ type FAQItem = {
   question: string;
   answer: string;
 };
-
 const faqData: FAQItem[] = [
   {
-    question: "¿Qué servicios están incluidos en una reforma integral?",
+    question: "¿Qué servicios de instalación ofrecen en luz, agua, gas y calefacción?",
     answer:
-      "Nuestro servicio de reformas integrales cubre todo el proceso de transformación de tu espacio, desde la demolición inicial hasta la instalación de sistemas eléctricos, fontanería, revestimientos, y acabados finales como pintura, carpintería y decoración. Nos aseguramos de entregar un resultado completamente listo para usar.",
+      "Ofrecemos instalaciones completas y certificadas de sistemas eléctricos, fontanería, gas natural y calefacción en viviendas, oficinas y locales comerciales. Trabajamos con materiales homologados y cumplimos con todas las normativas vigentes en Barcelona.",
   },
   {
-    question: "¿Cuánto tiempo se necesita para completar una reforma integral?",
+    question: "¿Necesito algún permiso para hacer una instalación de gas o electricidad en Barcelona?",
     answer:
-      "El tiempo de ejecución depende del tamaño y la complejidad del proyecto. Por lo general, una reforma integral tarda entre 6 y 12 semanas. Reformas más específicas, como baños o cocinas, pueden completarse en 2 a 4 semanas.",
+      "Sí, algunas instalaciones requieren permisos municipales o certificados oficiales. Nos encargamos de toda la gestión de licencias, boletines y certificados necesarios ante los organismos correspondientes.",
   },
   {
-    question: "¿Ayudan con el diseño y la planificación de la reforma?",
+    question: "¿Qué tiempo tarda una instalación completa de luz, agua o gas?",
     answer:
-      "Sí, ofrecemos asesoramiento profesional en diseño para crear espacios funcionales y estéticamente atractivos. Te ayudamos a elegir materiales, distribución de espacios y acabados que reflejen tu estilo y se ajusten a tu presupuesto.",
+      "Depende del tipo de instalación y las dimensiones del inmueble. Por lo general, una instalación básica puede completarse entre 1 y 5 días. Instalaciones más complejas pueden requerir más tiempo, especialmente si incluyen reformas adicionales.",
   },
   {
-    question: "¿Es necesario solicitar permisos para realizar una reforma?",
+    question: "¿Ofrecen mantenimiento o reparación de instalaciones existentes?",
     answer:
-      "En muchos casos, sí. Trabajos que afecten estructuras, fachadas o instalaciones mayores suelen requerir permisos municipales. No te preocupes, nos encargamos de gestionar toda la documentación y permisos necesarios para que no tengas que preocuparte por nada.",
+      "Sí, brindamos servicios de mantenimiento preventivo y correctivo para instalaciones de luz, agua, gas y calefacción. Respondemos ante averías, fugas o fallos en el sistema de forma rápida y eficiente.",
   },
   {
-    question: "¿Cómo se determina el costo de una reforma?",
+    question: "¿Cumplen con la normativa vigente en instalaciones en Barcelona?",
     answer:
-      "El costo varía según el tamaño del espacio, la calidad de los materiales y la complejidad del proyecto. Ofrecemos presupuestos claros y detallados, adaptados a tus necesidades, para que tengas una idea precisa del costo antes de comenzar.",
-  },
-  {
-    question: "¿Qué beneficios ofrece trabajar con su empresa?",
-    answer:
-      "Contamos con un equipo profesional con experiencia, garantizamos calidad en cada detalle y ofrecemos un servicio integral, desde el diseño hasta la ejecución. Además, priorizamos la transparencia en los costos y los plazos de entrega.",
+      "Por supuesto. Todos nuestros trabajos cumplen con la normativa autonómica y nacional, incluyendo el Reglamento Electrotécnico para Baja Tensión (REBT), el Reglamento de Instalaciones Térmicas en los Edificios (RITE) y la normativa de gas de la Generalitat de Catalunya.",
   },
 ];
+
 
 const FAQItem: React.FC<{ item: FAQItem }> = ({ item }) => {
   const [isOpen, setIsOpen] = useState(false);
