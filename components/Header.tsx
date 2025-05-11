@@ -1,18 +1,9 @@
 import siteMetadata from "@/data/siteMetadata";
 import headerNavLinks from "@/data/headerNavLinks";
-import Logo from "@/data/logo.svg";
 import Link from "./Link";
 import MobileNav from "./MobileNav";
-import ThemeSwitch from "./ThemeSwitch";
-import SearchButton from "./SearchButton";
 import FormularioAlerta from "./ui/FormularioAlerta";
 import ContactHeader from "./ContactHeader";
-import DropdownNav, { SimpleDropdown } from "./DropDownNav";
-const servicesItems = [
-  { title: "Servicio 1", href: "/servicios/1" },
-  { title: "Servicio 2", href: "/servicios/2" },
-  { title: "Servicio 3", href: "/servicios/3" },
-]
 const Header = () => {
   let headerClass =
     "flex flex-col items-center w-full justify-between p-2    sticky top-0 z-50";
@@ -37,9 +28,6 @@ const Header = () => {
                 {link.title}
               </Link>
             ))}
-
-         
-            
               </div>
           <MobileNav />
 
