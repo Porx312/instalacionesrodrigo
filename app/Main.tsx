@@ -42,12 +42,7 @@ export default function Home() {
           <div className="flex gap-3">
             <FormularioAlerta text="Contactanos" className="" />
 
-            <Link
-              href={"/services"}
-              className="border-white border-2 text-white p-2 text-bold"
-            >
-              Nuestros servicios
-            </Link>
+          
           </div>
         </article>
         <AboutSection />

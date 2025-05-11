@@ -101,7 +101,8 @@ export default function EngagementSection({ name }: Props) {
                 <div className="flex items-center space-x-3">
                   <Phone className="h-6 w-6" />
                   <p>
-                    ¿Tienes dudas? ¡Llámanos al 123-456-789 o mándanos un
+                    ¿Tienes dudas? ¡Llámanos al 667297405
+                    o mándanos un
                     WhatsApp!
                   </p>
                 </div>

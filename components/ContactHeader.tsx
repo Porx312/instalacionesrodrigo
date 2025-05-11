@@ -14,7 +14,7 @@ const ContactHeader = () => {
         </a>
         <a href="tel:667297405" className="flex items-center gap-1 text-white">
           <Phone className="w-4 h-4 " />
-          <h2>667297405</h2>
+          <h2>617920027</h2>
         </a>
       </div>
     </div>
